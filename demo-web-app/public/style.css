@@ -87,9 +87,14 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 3em 0 1em 0;
-  background-color: #E8FAFE;
   border-radius: 5px 5px 0 0;
+  background-color: #efefef;
 }
+
+.profile-header.blue   { background-color: #E8FAFE; }
+.profile-header.green  { background-color: #E4FFF3; }
+.profile-header.purple { background-color: #ECEAFF; }
+.profile-header.yellow { background-color: #FFF7E8; }
 
 .profile-link {
   color: black;

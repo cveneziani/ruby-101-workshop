@@ -24,7 +24,7 @@
         <% @profiles.each do |profile| %>
           <a href="<%= profile["website_url"] %>" target="_blank" rel="noopener" class="profile-link">
             <div class="profile-card">
-              <div class="profile-header">
+              <div class="profile-header <%= profile["color"] %>">
                 <div class="profile-picture" style="background-image: url('<%= profile["picture_url"] %>')"></div>
                 <h3 class="profile-name"><%= profile["first_name"] %></h3>
               </div>
