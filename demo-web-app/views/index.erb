@@ -17,6 +17,24 @@
         <span class="red">Women's</span> Coding Night
       </h1>
     </div>
-    <p>TODO: display all the profiles </p>
+    <div class="container">
+      <h2>Introducing the Women who code</h2>
+
+      <div class="profiles">
+        <% @profiles.each do |profile| %>
+          <a href="<%= profile["website_url"] %>" target="_blank" rel="noopener" class="profile-link">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-picture" style="background-image: url('<%= profile["picture_url"] %>')"></div>
+                <h3 class="profile-name"><%= profile["first_name"] %></h3>
+              </div>
+              <div class="profile-content">
+                <p class="profile-quote">“<%= profile["quote"] %>”</p>
+              </div>
+            </div>
+          </a>
+        <% end %>
+      </div>
+    </div>
   </body>
 </html>
