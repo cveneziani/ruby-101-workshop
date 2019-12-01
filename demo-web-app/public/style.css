@@ -1,1 +1,48 @@
 /* Add any styling you want */
+@font-face{
+  font-family:SFProText-bold;
+  src:url("https://ojay-dev.github.io/Suhstei-2/assets/fonts/SF-Pro-Text-Bold.woff")
+}
+
+@font-face{
+  font-family:SFProText;
+  src:url("https://ojay-dev.github.io/Suhstei-2/assets/fonts/SF-Pro-Text-Regular.otf")
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.banner {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #bfdddb;
+  background-image: url('/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 1.5em;
+  margin: 0;
+  font-family: "SFProText-bold";
+  font-size: 60px;
+  color: white;
+}
+
+.banner h1 .red {
+  color: #FD1015;
+  background-color: #FFE0E1;
+  padding: 0.2em 0.3em;
+}
+
+.banner .logo {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
