@@ -35,11 +35,11 @@ h3 {
 
 .banner {
   position: relative;
-  height: 600px;
+  height: 450px;
   display: flex;
   justify-content: center;
-  background-color: #bfdddb;
-  background-image: url('/banner.png');
+  background-color: #ffead4;
+  background-image: linear-gradient(0deg, rgba(60,60,60,.3), transparent 45%), url('/banner.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
