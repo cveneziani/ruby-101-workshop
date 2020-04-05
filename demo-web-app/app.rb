@@ -213,6 +213,13 @@ get "/" do
       "picture_url"  => "https://cdn.iconscout.com/icon/free/png-256/woman-1285-879839.png",
       "website_url"  => "https://nath03.github.io/my-profile/"
     },
+    {
+      "color"        => PURPLE,
+      "first_name"   => "Joanna",
+      "quote"        => "Je suis freelance en communication",
+      "picture_url"  => "https://cdn.iconscout.com/icon/free/png-256/woman-1285-879839.png",
+      "website_url"  => "https://joannawiwi.github.io/my-profile/"
+    },
   ]
 
   erb :index
