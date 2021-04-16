@@ -1,8 +1,13 @@
 require "sinatra"
 require "sinatra/link_header"
 require "sinatra/reloader" if development?
+require "sqlite3"
 
 enable :static
+
+DB_FILE_PATH       = File.join(__dir__, "database.sqlite")
+DB                 = SQLite3::Database.new(DB_FILE_PATH)
+DB.results_as_hash = true
 
 # Available colors
 BLUE   = "blue"
@@ -46,6 +51,8 @@ get "/" do
     # APPRENTICES
     # TODO: gather a few profiles
   ]
+
+  # @profiles = DB.execute("select * from profiles order by first_name")
 
   erb :index
 end
