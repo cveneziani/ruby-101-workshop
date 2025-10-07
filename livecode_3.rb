@@ -1,6 +1,6 @@
 profile = {
   "first_name"   => "Cecile",
-  "picture_url"  => "https://www.cecilitse.org/images/avatar-db7c2e53.png",
+  "picture_url"  => "https://www.cecilitse.org/images/avatar.png",
   "quote"        => "All you need is code",
   "super_powers" => ["Ruby wizard", "Can speak Dutch"]
 }
