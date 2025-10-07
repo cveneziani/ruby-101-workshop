@@ -1,41 +1,55 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    multi_json (1.15.0)
-    mustermann (2.0.2)
+    base64 (0.3.0)
+    logger (1.7.0)
+    mini_portile2 (2.8.9)
+    multi_json (1.17.0)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
-    puma (5.6.9)
+    puma (7.0.4)
       nio4r (~> 2.0)
-    rack (2.2.18)
-    rack-protection (2.2.3)
-      rack
+    rack (3.2.2)
+    rack-protection (4.1.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
+    rackup (2.2.1)
+      rack (>= 3)
     ruby2_keywords (0.0.5)
-    sinatra (2.2.3)
-      mustermann (~> 2.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.3)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sinatra-contrib (2.2.3)
-      multi_json
-      mustermann (~> 2.0)
-      rack-protection (= 2.2.3)
-      sinatra (= 2.2.3)
+    sinatra-contrib (4.1.1)
+      multi_json (>= 0.0.2)
+      mustermann (~> 3.0)
+      rack-protection (= 4.1.1)
+      sinatra (= 4.1.1)
       tilt (~> 2.0)
-    sqlite3 (1.4.2)
-    tilt (2.0.11)
+    sqlite3 (2.7.4)
+      mini_portile2 (~> 2.8.0)
+    tilt (2.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  puma (~> 5.6)
-  sinatra (~> 2.2)
-  sinatra-contrib (~> 2.2)
+  puma (~> 7.0)
+  rackup
+  sinatra (~> 4.1)
+  sinatra-contrib (~> 4.1)
   sqlite3
 
 RUBY VERSION
    ruby 3.4.6p54
 
 BUNDLED WITH
-   2.1.4
+   2.7.2
